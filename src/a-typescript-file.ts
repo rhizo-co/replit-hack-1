@@ -5,3 +5,5 @@ type Cat = {
 myKitty = {
   size: ""
 }
+
+myKitty. 
