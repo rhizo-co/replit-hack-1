@@ -1,0 +1,26 @@
+run = ["yarn", "dev"]
+
+[interpreter]
+command = [
+    "prybar-nodejs",
+    "-q",
+    "--ps1",
+    "🦄🚀 ✨NodeJS 16✨ \u0001\u001b[33m\u0002\u0001\u001b[00m\u0002",
+    "-i"
+]
+
+[packager]
+language = "nodejs-yarn"
+
+[packager.features]
+packageSearch = true
+guessImports = true
+
+[languages.javascript]
+pattern = "**/*.[tj]s*"
+
+[languages.javascript.languageServer]
+start = [ "typescript-language-server", "--stdio" ]
+[languages.javascript.languageServer.initialize]
+hostInfo = "myreplit"
+
